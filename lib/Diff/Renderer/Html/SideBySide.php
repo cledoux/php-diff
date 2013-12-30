@@ -68,8 +68,8 @@ class Diff_Renderer_Html_SideBySide extends Diff_Renderer_Html_Array
 		$html .= '<table class="Differences DifferencesSideBySide">';
 		$html .= '<thead>';
 		$html .= '<tr>';
-		$html .= '<th colspan="2">'.$this->options['oldName'].'</th>';
-		$html .= '<th colspan="2">'.$this->options['newName'].'</th>';
+		$html .= '<th colspan="2">'.'<a href="'.$this->options['oldNameLink'].">".$this->options['oldName'].'</a></th>';
+		$html .= '<th colspan="2">'.'<a href="'.$this->options['newNameLink'].">".$this->options['newName'].'</a></th>';
 		$html .= '</tr>';
 		$html .= '</thead>';
 		foreach($changes as $i => $blocks) {
